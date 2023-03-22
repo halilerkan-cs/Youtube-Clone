@@ -27,17 +27,12 @@ body {
   justify-content: space-between;
 }
 
-.sidebar-button:hover {
-  background-color: rgb(255, 255, 255, 0.15);
-}
-
 .yt-icon-wrapper-class {
   height: 100%;
   display: flex;
   align-items: center;
   width: 10%;
-  min-width: 10%;
-  max-width: 10%;
+  margin-left: 13vh;
   cursor: pointer;
 }
 
@@ -62,7 +57,7 @@ body {
 .search-box {
   display: flex;
   height: 75%;
-  width: 50%;
+  width: 70%;
   align-items: center;
   justify-content: space-between;
 }
@@ -129,15 +124,21 @@ body {
   padding-left: 15%;
   height: 75%;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 .create-button:hover,
 .notif-button:hover,
-.account-button:hover {
+.account-button:hover,
+.sidebar-extend-button:hover,
+.sidebar-buttons:hover {
   background-color: rgba(255, 255, 255, 0.21) !important;
 }
 
 .hover-button:hover {
   color: red;
+}
+
+.sidebar-buttons:hover .show-text {
+  opacity: 1 !important;
 }

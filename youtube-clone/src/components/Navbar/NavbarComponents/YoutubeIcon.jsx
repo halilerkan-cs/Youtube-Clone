@@ -1,8 +1,10 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function YoutubeIcon() {
   return (
-    <div className="yt-icon-wrapper-class">
+    <NavLink to="/" className="yt-icon-wrapper-class" style={{ textDecoration: 'none' }}>
+      {/* <div className="yt-icon-wrapper-class"> */}
       <svg className="yt-icon" viewBox="0 0 28 20" width="28px" height="20px">
         <path
           style={{ fill: 'red' }}
@@ -13,7 +15,8 @@ function YoutubeIcon() {
       </svg>
       <p className="yt-icon-text">Youtube</p>
       <p className="yt-icon-location">TR</p>
-    </div>
+      {/* </div> */}
+    </NavLink>
   );
 }
 
